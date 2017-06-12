@@ -1,0 +1,9 @@
+<div [hidden] ="selectedHerox">
+<h1>Please select your hero...<br></h1>
+</div>
+
+<div *ngIf = "selectedHerox">
+<h1 >You've selected {{selectedHerox.name}}</h1>
+<input  [(ngModel)]= "selectedHerox.name" placeholder="Hero"/>
+</div> 
+

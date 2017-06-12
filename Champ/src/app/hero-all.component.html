@@ -1,0 +1,6 @@
+<hero-select [selectedHerox]="selectedHero"></hero-select>
+<div *ngIf="heroes">
+    <ul *ngFor = 'let hero of heroes'>
+        <li><button (click)="bindvalue(hero)">{{hero.name}}</button></li>
+    </ul>
+</div>
